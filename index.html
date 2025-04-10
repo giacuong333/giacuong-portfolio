@@ -1,669 +1,541 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lê Gia Cường</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lê Gia Cường</title>
 
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-      type="text/css" />
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+			rel="stylesheet"
+			type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+			rel="stylesheet"
+			type="text/css" />
 
-    <!-- CDN Boostrap Css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous" />
+		<!-- CDN Boostrap Css -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- CDN Boostrap Js  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"></script>
+		<!-- CDN Boostrap Js  -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"></script>
 
-    <!-- Font icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- Font icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="app d-md-flex justify-content-start align-items-start">
-      <!-- Sidebar -->
-      <nav
-        class="navbar sticky-top d-flex flex-md-column justify-content-center align-items-center p-md-4 shadow"
-        style="background-color: #bd5d38; transition: all ease-in-out 0.2s">
-        <div
-          class="avatar rounded-circle p-2 mb-3 d-md-block d-none"
-          style="background-color: #ca7d60">
-          <img
-            class="img-responsive w-100 h-100 rounded-circle"
-            src="avatar.jpg"
-            alt="Avatar"
-            style="object-fit: cover; object-position: center" />
-        </div>
+		<!-- Css -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app d-md-flex justify-content-start align-items-start">
+			<!-- Sidebar -->
+			<nav
+				class="navbar sticky-top d-flex flex-md-column justify-content-center align-items-center p-md-4 shadow"
+				style="background-color: #bd5d38; transition: all ease-in-out 0.2s">
+				<div
+					class="avatar rounded-circle p-2 mb-3 d-md-block d-none"
+					style="background-color: #ca7d60">
+					<img
+						class="img-responsive w-100 h-100 rounded-circle"
+						src="avatar.jpg"
+						alt="Avatar"
+						style="object-fit: cover; object-position: center" />
+				</div>
 
-        <!-- Used for small screen -->
-        <header
-          class="container-fluid px-3 d-md-none d-flex justify-content-between align-items-center w-100">
-          <a
-            href="#"
-            class="m-0 text-white fs-3"
-            style="text-decoration: none; letter-spacing: 0.05rem"
-            >Lê Gia Cường</a
-          >
-          <button
-            type="button"
-            class="fa fa-bars btn btn-outline-light fs-5 p-2 px-3 my-2"
-            data-bs-toggle="collapse"
-            data-bs-target="#header"
-            aria-controls="header"
-            aria-expanded="false"></button>
-        </header>
+				<!-- Used for small screen -->
+				<header
+					class="container-fluid px-3 d-md-none d-flex justify-content-between align-items-center w-100">
+					<a
+						href="#"
+						class="m-0 text-white fs-3"
+						style="text-decoration: none; letter-spacing: 0.05rem"
+						>Lê Gia Cường</a
+					>
+					<button
+						type="button"
+						class="fa fa-bars btn btn-outline-light fs-5 p-2 px-3 my-2"
+						data-bs-toggle="collapse"
+						data-bs-target="#header"
+						aria-controls="header"
+						aria-expanded="false"></button>
+				</header>
 
-        <ul
-          style="list-style-type: none"
-          class="m-md-0 p-md-0 px-3 navbar-list d-md-flex flex-column justify-content-start align-items-center collapse collapse-vertical w-100"
-          id="header">
-          <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center active"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#about"
-              >ABOUT</a
-            >
-          </li>
-          <!-- <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#experience"
-              >EXPERIENCE</a
-            >
-          </li> -->
-          <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#education"
-              >EDUCATION</a
-            >
-          </li>
-          <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#skills"
-              >SKILLS</a
-            >
-          </li>
-          <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#projects"
-              >PROJECTS</a
-            >
-          </li>
-          <li class="fs-5 py-2">
-            <a
-              class="py-2 w-100 text-center"
-              style="
-                font-weight: 700;
-                text-decoration: none;
-                color: #ffffff8f;
-                letter-spacing: 0.08rem;
-              "
-              href="#awards"
-              >CERTIFICATIONS</a
-            >
-          </li>
-        </ul>
-      </nav>
+				<ul
+					style="list-style-type: none"
+					class="m-md-0 p-md-0 px-3 navbar-list d-md-flex flex-column justify-content-start align-items-center collapse collapse-vertical w-100"
+					id="header">
+					<li class="fs-5 py-2">
+						<a
+							class="py-2 w-100 text-center active"
+							style="
+								font-weight: 700;
+								text-decoration: none;
+								color: #ffffff8f;
+								letter-spacing: 0.08rem;
+							"
+							href="#about"
+							>ABOUT</a
+						>
+					</li>
+					<li class="fs-5 py-2">
+						<a
+							class="py-2 w-100 text-center"
+							style="
+								font-weight: 700;
+								text-decoration: none;
+								color: #ffffff8f;
+								letter-spacing: 0.08rem;
+							"
+							href="#education"
+							>EDUCATION</a
+						>
+					</li>
+					<li class="fs-5 py-2">
+						<a
+							class="py-2 w-100 text-center"
+							style="
+								font-weight: 700;
+								text-decoration: none;
+								color: #ffffff8f;
+								letter-spacing: 0.08rem;
+							"
+							href="#skills"
+							>SKILLS</a
+						>
+					</li>
+					<li class="fs-5 py-2">
+						<a
+							class="py-2 w-100 text-center"
+							style="
+								font-weight: 700;
+								text-decoration: none;
+								color: #ffffff8f;
+								letter-spacing: 0.08rem;
+							"
+							href="#projects"
+							>PROJECTS</a
+						>
+					</li>
+					<li class="fs-5 py-2">
+						<a
+							class="py-2 w-100 text-center"
+							style="
+								font-weight: 700;
+								text-decoration: none;
+								color: #ffffff8f;
+								letter-spacing: 0.08rem;
+							"
+							href="#awards"
+							>CERTIFICATIONS</a
+						>
+					</li>
+				</ul>
+			</nav>
 
-      <main>
-        <!-- About -->
-        <section class="common-section px-lg-5 px-3" id="about">
-          <div>
-            <p
-              class="m-0 text-uppercase"
-              style="
-                font-size: 6rem;
-                color: #343a40;
-                font-weight: 800;
-                line-height: 6rem;
-              ">
-              Lê Gia <span style="color: #bd5d38">Cường</span>
-            </p>
-            <p class="fs-3 mb-4 text-uppercase" style="color: #626a72">
-              245 Phường 16, Quận 8, Tp.Hồ Chí Minh ·
-              <a
-                href="tel:+84948800917"
-                class="inline-block"
-                style="color: #bd5d38"
-                >(+84)948800917</a
-              >
-              ·
-              <a href="mailto:legiacuong789@gmail.com" style="color: #bd5d38"
-                >LEGIACUONG789@GMAIL.COM</a
-              >
-            </p>
-            <p class="fs-4" style="color: #626a72; letter-spacing: 0.04rem">
-              With a strong passion for frontend development, I am seeking an
-              intership opportunity to apply my knowledge of ReactJS,
-              JavaScript, and modern web technoligies to build user-friendly
-              applications. I am so eager to learn and contribute to a dynamic
-              development team.
-            </p>
-            <div class="social-icons mt-5 d-flex">
-              <a href="" class="d-inline-block me-3 text-center">
-                <i class="fa fa-brands fa-linkedin social-icon"></i>
-              </a>
-              <a
-                href="https://github.com/giacuong333"
-                class="d-inline-block me-3 text-center">
-                <i class="fa fa-brands fa-github social-icon"></i>
-              </a>
-              <a href="" class="d-inline-block me-3 text-center">
-                <i class="fs-3 fa fa-brands fa-twitter social-icon"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100080111582118"
-                class="d-inline-block me-3 text-center">
-                <i class="fa fa-brands fa-facebook social-icon"></i>
-              </a>
-            </div>
-          </div>
-        </section>
+			<main>
+				<!-- About -->
+				<section class="common-section px-lg-5 px-3" id="about">
+					<div>
+						<p
+							class="m-0 text-uppercase"
+							style="
+								font-size: 6rem;
+								color: #343a40;
+								font-weight: 800;
+								line-height: 6rem;
+							">
+							Lê Gia <span style="color: #bd5d38">Cường</span>
+						</p>
+						<p class="fs-3 mb-4 text-uppercase" style="color: #626a72">
+							Quận 8, Tp.Hồ Chí Minh ·
+							<a
+								href="tel:+84948800917"
+								class="inline-block"
+								style="color: #bd5d38"
+								>(+84)948800917</a
+							>
+							·
+							<a href="mailto:legiacuong789@gmail.com" style="color: #bd5d38"
+								>LEGIACUONG789@GMAIL.COM</a
+							>
+						</p>
+						<p class="fs-4" style="color: #626a72; letter-spacing: 0.04rem">
+							With a strong passion for frontend development, I am seeking an
+							intership opportunity to apply my knowledge of ReactJS,
+							JavaScript, and modern web technoligies to build user-friendly
+							applications. I am so eager to learn and contribute to a dynamic
+							development team.
+						</p>
+						<div class="social-icons mt-5 d-flex">
+							<a
+								href="https://www.linkedin.com/in/gia-c%C6%B0%E1%BB%9Dng-462387321/"
+								class="d-inline-block me-3 text-center">
+								<i class="fa fa-brands fa-linkedin social-icon"></i>
+							</a>
+							<a
+								href="https://github.com/giacuong333"
+								class="d-inline-block me-3 text-center">
+								<i class="fa fa-brands fa-github social-icon"></i>
+							</a>
+							<!-- <a href="" class="d-inline-block me-3 text-center">
+								<i class="fs-3 fa fa-brands fa-twitter social-icon"></i>
+							</a> -->
+							<a
+								href="https://www.facebook.com/profile.php?id=100080111582118"
+								class="d-inline-block me-3 text-center">
+								<i class="fa fa-brands fa-facebook social-icon"></i>
+							</a>
+						</div>
+					</div>
+				</section>
 
-        <!-- Experience -->
-        <!-- <section
-          class="common-section px-lg-5 px-3 lg:px-5 px-3"
-          id="experience">
-          <div>
-            <p
-              class="m-0"
-              style="
-                font-size: 3rem;
-                color: #343a40;
-                font-weight: 800;
-                line-height: 6rem;
-              ">
-              EXPERIENCE
-            </p>
-            <div class="first">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  SENIOR WEB DEVELOPER
-                </p>
-                <p
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  March 2013 - Present
-                </p>
-                <div class="sub-desc fs-3" style="color: #626a72">
-                  INTELITEC SOLUTIONS
-                </div>
-              </div>
-              <p style="color: #626a72; letter-spacing: 0.05rem" class="fs-5">
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
-            </div>
+				<!-- Education -->
+				<section
+					class="common-section px-lg-5 px-3 lg:px-5 px-3"
+					id="education">
+					<div>
+						<p
+							class="m-0"
+							style="
+								font-size: 3rem;
+								color: #343a40;
+								font-weight: 800;
+								line-height: 6rem;
+							">
+							EDUCATION
+						</p>
+						<div class="first">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									SAIGON UNIVERSITY
+								</p>
+								<p
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									2021 - 2026
+								</p>
+								<div class="sub-desc fs-3" style="color: #626a72">
+									SOFTWARE ENGINEERING <br />CURRENT GPA: 2.88
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-            <div class="second mt-5">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  WEB DEVELOPER
-                </p>
-                <p
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  December 2011 - March 2013
-                </p>
-                <div class="sub-desc fs-3" style="color: #626a72">
-                  INTELITEC SOLUTIONS
-                </div>
-              </div>
-              <p style="color: #626a72; letter-spacing: 0.05rem" class="fs-5">
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
-            </div>
+				<!-- Skills -->
+				<section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="skills">
+					<div>
+						<p
+							class="m-0"
+							style="
+								font-size: 3rem;
+								color: #343a40;
+								font-weight: 800;
+								line-height: 6rem;
+							">
+							TECHNICAL SKILLS
+						</p>
+						<div class="d-flex flex-column gap-4">
+							<div class="first">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										FRONTEND
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										ReactJS, Angular (Basic), JavaScript (ES6+), HTML5, CSS3,
+										Tailwind CSS, Bootstrap
+									</div>
+								</div>
+							</div>
+							<div class="second">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										STATE MANAGEMENT
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										Context API, Redux
+									</div>
+								</div>
+							</div>
+							<div class="third">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										VERSION CONTROL
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										Git, GitHub
+									</div>
+								</div>
+							</div>
+							<div class="fourth">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										BACKEND (BASIC KNOWLEDGE)
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										Node.js, Django, Spring Boot, .NET, PHP
+									</div>
+								</div>
+							</div>
+							<div class="fifth">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										DATABASE
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										MongoDB, MySQL
+									</div>
+								</div>
+							</div>
+							<div class="sixth">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										DEVELOPMENT TOOLS
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">
+										Visual Studio Code, Postman, Docker (Basic), AWS (Basic)
+									</div>
+								</div>
+							</div>
+							<div class="seventh">
+								<div class="desc">
+									<p
+										class="m-0 fs-2 m-0 d-inline-block"
+										style="font-weight: 600; color: #343a40">
+										AUTHENTICATION
+									</p>
+									<div class="sub-desc fs-3" style="color: #626a72">JWT</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-            <div class="third mt-5">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  JUNIOR WEB DESIGNER
-                </p>
-                <p
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  July 2010 - December 2011
-                </p>
-                <div class="sub-desc fs-3" style="color: #626a72">
-                  SHOUT! MEDIA PRODUCTIONS
-                </div>
-              </div>
-              <p style="color: #626a72; letter-spacing: 0.05rem" class="fs-5">
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-
-            <div class="fourth mt-5">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  WEB DESIGN INTERN
-                </p>
-                <p
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  September 2008 - June 2010
-                </p>
-                <div class="sub-desc fs-3" style="color: #626a72">
-                  SHOUT! MEDIA PRODUCTIONS
-                </div>
-              </div>
-              <p style="color: #626a72; letter-spacing: 0.05rem" class="fs-5">
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Education -->
-        <section
-          class="common-section px-lg-5 px-3 lg:px-5 px-3"
-          id="education">
-          <div>
-            <p
-              class="m-0"
-              style="
-                font-size: 3rem;
-                color: #343a40;
-                font-weight: 800;
-                line-height: 6rem;
-              ">
-              EDUCATION
-            </p>
-            <div class="first">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  SAIGON UNIVERSITY
-                </p>
-                <p
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  2021 - 2026
-                </p>
-                <div class="sub-desc fs-3" style="color: #626a72">
-                  SOFTWARE ENGINEERING <br />GPA: 2.88
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="skills">
-          <div>
-            <p
-              class="m-0"
-              style="
-                font-size: 3rem;
-                color: #343a40;
-                font-weight: 800;
-                line-height: 6rem;
-              ">
-              TECHNICAL SKILLS
-            </p>
-            <div class="d-flex flex-column gap-4">
-              <div class="first">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    FRONTEND
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    ReactJS, Angular (Basic), JavaScript (ES6+), HTML5, CSS3,
-                    Tailwind CSS, Bootstrap
-                  </div>
-                </div>
-              </div>
-              <div class="second">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    STATE MANAGEMENT
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    Context API, Redux
-                  </div>
-                </div>
-              </div>
-              <div class="third">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    VERSION CONTROL
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    Git, GitHub
-                  </div>
-                </div>
-              </div>
-              <div class="fourth">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    BACKEND (BASIC KNOWLEDGE)
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    Node.js, Django, Spring Boot, .NET, PHP
-                  </div>
-                </div>
-              </div>
-              <div class="fifth">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    DATABASE
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    MongoDB, MySQL
-                  </div>
-                </div>
-              </div>
-              <div class="sixth">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    DEVELOPMENT TOOLS
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">
-                    Visual Studio Code, Postman, Docker (Basic), AWS (Basic)
-                  </div>
-                </div>
-              </div>
-              <div class="seventh">
-                <div class="desc">
-                  <p
-                    class="m-0 fs-2 m-0 d-inline-block"
-                    style="font-weight: 600; color: #343a40">
-                    AUTHENTICATION
-                  </p>
-                  <div class="sub-desc fs-3" style="color: #626a72">JWT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="projects">
-          <p
-            class="m-0"
-            style="
-              font-size: 3rem;
-              color: #343a40;
-              font-weight: 800;
-              line-height: 6rem;
-            ">
-            PROJECTS
-          </p>
-          <div class="d-flex flex-column gap-4">
-            <div class="first">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  HOTEL MANAGEMENT WEBSITE
-                </p>
-                <a
-                  href="https://github.com/giacuong333/hotel-management.git"
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  https://github.com/giacuong333/hotel-management.git
-                </a>
-                <ul
-                  class="sub-desc fs-3"
-                  style="list-style-type: circle; color: #626a72">
-                  <li>
-                    <p class="m-0">
-                      Built a ReactJS client for booking beauty and friendly
-                      services with user authentication
-                    </p>
-                  </li>
-                  <li>
-                    <p class="m-0">
-                      Integrated backend APIs using .NET and MySQL for calendar
-                      management.
-                    </p>
-                  </li>
-                  <li>
-                    <p class="m-0">Integrated VNPay for online payments.</p>
-                  </li>
-                  <li>
-                    <p class="m-0">
-                      Implemented responsive UI using Tailwind CSS
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="second">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  JEWELRY WEBSITE
-                </p>
-                <a
-                  href="https://github.com/giacuong333/website_jewelry.git"
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  https://github.com/giacuong333/website_jewelry.git
-                </a>
-                <ul
-                  class="sub-desc fs-3"
-                  style="list-style-type: circle; color: #626a72">
-                  <li>
-                    <p class="m-0">
-                      Designed and developed a jewelry e-commerce website using
-                      JavaScript (jQuery), PHP, MySQL, and Bootstrap
-                    </p>
-                  </li>
-                  <li>
-                    <p class="m-0">
-                      Implemented product catalog, shopping cart, and user
-                      authentication functionalities
-                    </p>
-                  </li>
-                  <li>
-                    <p class="m-0">
-                      Optimized website responsiveness and performance for an
-                      enhanced user experience
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="third">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  BEAUTY APPOINTMENT BOOKING & E-COMMERCE WEBSITE
-                </p>
-                <a
-                  href="https://github.com/giacuong333/j2ee.git"
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  https://github.com/giacuong333/j2ee.git
-                </a>
-                <ul
-                  class="sub-desc fs-3"
-                  style="list-style-type: circle; color: #626a72">
-                  <li>
-                    <p class="m-0">On Going</p>
-                  </li>
-                  <!-- <li>
+				<!-- Projects -->
+				<section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="projects">
+					<p
+						class="m-0"
+						style="
+							font-size: 3rem;
+							color: #343a40;
+							font-weight: 800;
+							line-height: 6rem;
+						">
+						PROJECTS
+					</p>
+					<div class="d-flex flex-column gap-4">
+						<div class="first">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									HOTEL MANAGEMENT WEBSITE
+								</p>
+								<a
+									href="https://github.com/giacuong333/hotel-management.git"
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									https://github.com/giacuong333/hotel-management.git
+								</a>
+								<ul
+									class="sub-desc fs-3"
+									style="list-style-type: circle; color: #626a72">
+									<li>
+										<p class="m-0">
+											Built a ReactJS client for booking beauty and friendly
+											services with user authentication
+										</p>
+									</li>
+									<li>
+										<p class="m-0">
+											Integrated backend APIs using .NET and MySQL for calendar
+											management.
+										</p>
+									</li>
+									<li>
+										<p class="m-0">Integrated VNPay for online payments.</p>
+									</li>
+									<li>
+										<p class="m-0">
+											Implemented responsive UI using Tailwind CSS
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="second">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									JEWELRY WEBSITE
+								</p>
+								<a
+									href="https://github.com/giacuong333/website_jewelry.git"
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									https://github.com/giacuong333/website_jewelry.git
+								</a>
+								<ul
+									class="sub-desc fs-3"
+									style="list-style-type: circle; color: #626a72">
+									<li>
+										<p class="m-0">
+											Designed and developed a jewelry e-commerce website using
+											JavaScript (jQuery), PHP, MySQL, and Bootstrap
+										</p>
+									</li>
+									<li>
+										<p class="m-0">
+											Implemented product catalog, shopping cart, and user
+											authentication functionalities
+										</p>
+									</li>
+									<li>
+										<p class="m-0">
+											Optimized website responsiveness and performance for an
+											enhanced user experience
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="third">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									BEAUTY APPOINTMENT BOOKING & E-COMMERCE WEBSITE
+								</p>
+								<a
+									href="https://github.com/giacuong333/j2ee.git"
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									https://github.com/giacuong333/j2ee.git
+								</a>
+								<ul
+									class="sub-desc fs-3"
+									style="list-style-type: circle; color: #626a72">
+									<li>
+										<p class="m-0">On Going</p>
+									</li>
+									<!-- <li>
                     <p class="m-0"></p>
                   </li>
                   <li>
                     <p class="m-0"></p>
                   </li> -->
-                </ul>
-              </div>
-            </div>
-            <div class="fourth">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  SPOTIFY CLONE
-                </p>
-                <a
-                  href="https://github.com/giacuong333/clone-spotify.git"
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  https://github.com/giacuong333/clone-spotify.git
-                </a>
-                <ul
-                  class="sub-desc fs-3"
-                  style="list-style-type: circle; color: #626a72">
-                  <li>
-                    <p class="m-0">On Going</p>
-                  </li>
-                  <!-- <li>
+								</ul>
+							</div>
+						</div>
+						<div class="fourth">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									SPOTIFY CLONE
+								</p>
+								<a
+									href="https://github.com/giacuong333/clone-spotify.git"
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									https://github.com/giacuong333/clone-spotify.git
+								</a>
+								<ul
+									class="sub-desc fs-3"
+									style="list-style-type: circle; color: #626a72">
+									<li>
+										<p class="m-0">On Going</p>
+									</li>
+									<!-- <li>
                     <p class="m-0"></p>
                   </li>
                   <li>
                     <p class="m-0"></p>
                   </li> -->
-                </ul>
-              </div>
-            </div>
-            <div class="fifth">
-              <div class="desc">
-                <p
-                  class="m-0 fs-2 m-0 d-inline-block"
-                  style="font-weight: 600; color: #343a40">
-                  BOOK STORE MANAGEMENT
-                </p>
-                <a
-                  href="https://github.com/giacuong333/MERN_BookManagement.git"
-                  class="m-0 fs-5 m-0 d-inline-block"
-                  style="color: #bd5d38; float: right">
-                  https://github.com/giacuong333/MERN_BookManagement.git
-                </a>
-                <ul
-                  class="sub-desc fs-3"
-                  style="list-style-type: circle; color: #626a72">
-                  <li>
-                    <p class="m-0">On Going</p>
-                  </li>
-                  <!-- <li>
+								</ul>
+							</div>
+						</div>
+						<div class="fifth">
+							<div class="desc">
+								<p
+									class="m-0 fs-2 m-0 d-inline-block"
+									style="font-weight: 600; color: #343a40">
+									BOOK STORE MANAGEMENT
+								</p>
+								<a
+									href="https://github.com/giacuong333/MERN_BookManagement.git"
+									class="m-0 fs-5 m-0 d-inline-block"
+									style="color: #bd5d38; float: right">
+									https://github.com/giacuong333/MERN_BookManagement.git
+								</a>
+								<ul
+									class="sub-desc fs-3"
+									style="list-style-type: circle; color: #626a72">
+									<li>
+										<p class="m-0">On Going</p>
+									</li>
+									<!-- <li>
                     <p class="m-0"></p>
                   </li>
                   <li>
                     <p class="m-0"></p>
                   </li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <!-- awards -->
-        <section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="awards">
-          <div class="fifth">
-            <div class="desc">
-              <p
-                class="m-0 fs-2 m-0 d-inline-block"
-                style="font-weight: 600; color: #343a40">
-                CERTIFICATIONS AND ACHIEVEMENTS
-              </p>
-              <div class="sub-desc fs-3" style="color: #626a72">
-                <p class="m-0">TOEIC - 665 (2025)</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+				<!-- awards -->
+				<section class="common-section px-lg-5 px-3 lg:px-5 px-3" id="awards">
+					<div class="fifth">
+						<div class="desc">
+							<p
+								class="m-0 fs-2 m-0 d-inline-block"
+								style="font-weight: 600; color: #343a40">
+								CERTIFICATIONS AND ACHIEVEMENTS
+							</p>
+							<div class="sub-desc fs-3" style="color: #626a72">
+								<p class="m-0">TOEIC - 665 (2025)</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
 
-    <script src="main.js" defer></script>
-  </body>
+		<script src="main.js" defer></script>
+	</body>
 </html>
